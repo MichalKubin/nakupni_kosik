@@ -14,6 +14,32 @@ print(zadani.oddelovac)
 print(zadani.nabidka)
 
 # Cyklus, který přidává zboží do košíku tak dlouho, jak uživatel zamýšlí
+polozka = ""
+kosik = zadani.kosik
+
+while polozka != "end":
+    polozka = input("Zadejte název zboží (dle ceníku), které chcete vložit "
+                    "do košíku: ")
+    if polozka in kosik.keys():
+        pocet = kosik[polozka] + 1
+
+        kosik[polozka] = pocet
+        print(kosik)
+
+    else:
+
+        if polozka in zadani.potraviny:
+            kosik[polozka] = 1
+            print(kosik)
+        else:
+            print(f"Položka {polozka} není v nabídce.")
+    """
+    print(polozka)
+    if kosik[polozka]:
+        kosik[polozka] = 1
+    else:
+        kosik[polozka] = kosik[polozka] + 1
+    """
 
     # .. pokud uživatel nezadá zboží z nabídky
 

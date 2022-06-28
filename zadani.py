@@ -20,6 +20,6 @@ nabidka = """
 | jogurt    |    10,-  |
 | chleb     |    20,-  |
 | jablko    |    10,-  |
-| pomenrac  |    15,-  |
+| pomeranc  |    15,-  |
 +-----------+----------+
 """
